@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <title>My Travel Memmories</title>
+</head>
+<body>
+  <header>
+    <img src="イギー.JPG" alt="マイアイコン" width="200" height="200" >
+    <h1>
+      My Travel Memmories
+    </h1>
+    <p>旅の思い出語りますｗ</p>
+  </header>
+
+  <div class="list-sp">
+    <span class="material-symbols-outlined" id="open">menu</span>
+  </div>
+
+  <div class="overlay">
+    <span class="material-symbols-outlined" id="close">close</span>
+    <nav class="menu-sp">
+      <h2>MENU</h2>
+      <ul class="ul-sp">
+        <li><a href="saga.html" target="_blank">佐賀編</a></li>
+        <li><a href="#" target="_blank">鎌倉編</a></li>
+        <li><a href="#" target="_blank">箱根編</a></li>
+        <li><a href="#" target="_blank">秩父編</a></li>
+        <li><a href="#" target="_blank">食事編</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  
+
+  <nav class="list-pc">
+    <ul class="ul-pc">
+      <li><a href="#saga">佐賀編</a></li>
+      <li><a href="#kamakura">鎌倉編</a></li>
+      <li><a href="#hakone">箱根編</a></li>
+      <li><a href="#titibu">秩父編</a></li>
+      <li><a href="#syokuji">食事編</a></li>
+    </ul>
+  </nav>  
+
+  <main class="container">
+    <section class="hero desc">
+      <div>
+        <div class="desc-1">
+          <p>趣味の一人旅の思い出を語りつくす・・・</p>
+        </div>
+        <div class="desc-2">
+          <p>そんな自分勝手な趣味サイトです。</p>
+        </div>
+        <div class="desc-3">
+          <p>皆さんの暇つぶしの</p>
+        </div>
+        <div class="desc-4">
+          <p>お役にたてれば幸いです。</p>
+        </div>
+      </div>
+
+      <section>
+        <div class="carousel">
+          <ul id="carousel-ul">
+            <li><img src="海ー１.JPG" alt="車窓から" width="300" height="300"></li>
+            <li><img src="鎌倉－トンネル１.JPG" alt="トンネル" width="300" height="300"></li>
+            <li><img src="箱根ー滝２.JPG" alt="滝" width="300" height="300"></li>
+            <li><img src="秩父ー三峰６.JPG" alt="三峰神社" width="300" height="300"></li>
+            <li><img src="イカさしー１.JPG" alt="イカサシ" width="300" height="300"></li>
+          </ul>
+  
+          <button id="prev">&laquo;</button>
+          <button id="next">&raquo;</button>
+        </div>
+
+        <nav id="carousel-buttons">
+          
+        </nav>
+      </section>
+    </section>
+  
+    <section class="content">
+      <section id="saga">
+        <a href="saga.html" target="_blank">
+          <h3 class="content-title">佐賀編</h3>
+          <div class="content-img">
+            <img src="佐賀ー唐津城ー１.JPG" alt="佐賀唐津城" width="300" height="300">
+          </div>
+        </a>
+      </section>
+      <section id="kamakura">
+        <a href="kamakura.html" target="_blank" class="reverse">
+          <h3 class="content-title slide-from-right">鎌倉編</h3>
+          <div class="content-img">
+            <img src="鎌倉大仏１.JPG" alt="佐賀唐津城" width="300" height="300">
+          </div>
+        </a>
+      </section>
+      <section id="hakone">
+        <a href="#" target="_blank">
+          <h3 class="content-title">箱根編</h3>
+          <div class="content-img">
+            <img src="箱根ー大涌谷２.JPG" alt="佐賀唐津城" width="300" height="300">
+          </div>
+        </a>
+      </section>
+      <section id="titibu">
+        <a href="#" target="_blank" class="reverse">
+          <h3 class="content-title">秩父編</h3>
+          <div class="content-img">
+            <img src="秩父ー長瀞３.JPG" alt="佐賀唐津城" width="300" height="300">
+          </div>
+        </a>
+      </section>
+      <section id="syokuji">
+        <a href="#" target="_blank">
+          <h3 class="content-title">食事編</h3>
+          <div class="content-img">
+            <img src="食事－金目.JPG" alt="佐賀唐津城" width="300" height="300">
+          </div>
+        </a>
+      </section>
+    </section>
+  </main>
+  
+  
+
+  <footer>
+    <div>
+      <small>©T. OHZAWA</small>
+    </div>
+  </footer>
+
+  
+  
+  <script src="main.js"></script>
+</body>
+</html>
