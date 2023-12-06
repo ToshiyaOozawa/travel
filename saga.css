@@ -1,0 +1,325 @@
+@charset "utf-8";
+
+body {
+  margin: 0;
+}
+
+h1 {
+  margin: 16px 0 0;
+  font-weight: normal;
+  color: white;
+}
+
+h2 {
+  margin: 0;
+  font-weight: normal;
+}
+
+h3 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 32px;
+}
+
+h4 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 32px;
+}
+
+p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  opacity: .6;
+}
+
+.container {
+  max-width: 800px;
+  width: calc(100% - 32px);
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* header */
+
+header {
+  background: url(箱根－景色４.JPG) center;
+  object-fit: cover;
+  text-align: center;
+  padding: 32px 0;
+}
+
+header img {
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+header p {
+  color: white;
+}
+
+/* saga */
+
+#saga .sub-title {
+  width: 100%;
+  height: 200px;
+  margin: 8px 0 0;
+  background: url(ロマサガバス.JPG) center;
+  text-align: center;
+}
+
+.sub-title > div {
+  background: rgba(255, 255, 255, .6);
+  height: 100%;
+}
+
+#saga h3 {
+  line-height: 200px;
+  color: black;
+  font-size: 64px;
+  font-weight: bold;
+}
+
+/* list */
+
+#open {
+  float: right;
+  line-height: 48px;
+  font-size: 48px;
+  padding: 0 8px;
+  cursor: pointer;
+}
+
+#open:hover {
+  opacity: .6;
+}
+
+nav.list-pc {
+  display: none;
+}
+
+nav ul.ul-pc {
+  max-width: 800px;
+  width: calc(100% - 32px);
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+  flex-wrap: wrap;
+}
+
+nav .ul-pc li {
+  display: inline-block;
+  padding: 8px 16px 0;
+  text-shadow: 3px 3px 6px gray;
+  border-bottom: 1px solid gray;
+  transition: transorm .3s;
+}
+
+nav .ul-pc li:hover {
+  transform: scale(120%);
+}
+
+/* overlay */
+
+.overlay {
+  width: 90%;
+  height: 80%;
+  position: fixed;
+  top: 10%;
+  right: 0;
+  background: rgba(255, 255, 255, .9);
+  z-index: 1;
+  border-radius: 8px;
+  text-align: center;
+  transform: translateX(500px);
+  transition: transform .4s;
+}
+
+.overlay.move-overlay {
+  transform: none;
+}
+
+.overlay h2 {
+  padding: 24px 0;
+  font-size: 64px;
+}
+
+.overlay #close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 48px;
+  cursor: pointer;
+}
+
+.overlay #close:hover {
+  opacity: .6;
+}
+
+.ul-sp {
+  padding: 0 32px;
+  
+}
+
+.ul-sp li + li {
+  margin: 24px 0 0;
+}
+
+#open.hidden {
+  display: none
+}
+
+.ul-sp li {
+  font-size: 32px;
+  transform: translateX(150px);
+  opacity: 0;
+  transition: opacity 1s, transform 1s;
+}
+
+.overlay.move-overlay .ul-sp li {
+  opacity: 1;
+  transform: none;
+}
+
+
+.overlay.move-overlay .ul-sp li:nth-child(1) {
+  transition-delay: .1s;
+}
+
+.overlay.move-overlay .ul-sp li:nth-child(2) {
+  transition-delay: .2s;
+}
+
+.overlay.move-overlay .ul-sp li:nth-child(3) {
+  transition-delay: .3s;
+}
+
+.overlay.move-overlay .ul-sp li:nth-child(4) {
+  transition-delay: .4s;
+}
+
+.overlay.move-overlay .ul-sp li:nth-child(5) {
+  transition-delay: .5s;
+}
+
+
+/* main */
+
+main {
+  clear: right;
+}
+
+/* content */
+
+.content {
+  padding: 8px 0 32px;
+}
+
+.content section {
+  text-align: center;
+}
+
+.content h3 {
+  margin: 16px 0 0;
+}
+
+.content section img {
+  object-fit: cover;
+  width: 100%;
+  margin: 8px 0 0;
+}
+
+/* location */
+
+.location div {
+  width: 80%;
+  margin: 16px auto 0;
+  padding: 8px;
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0 0 8px gray;
+  transition: transform .3s;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.location div:hover {
+  transform: scale(110%);
+}
+
+/* footer */
+
+footer {
+  height: 160px;
+  background: url(秩父ー長瀞１.JPG) center;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 16px 0 0;
+}
+
+footer div {
+  height: 100%;
+  background: rgba(255, 255, 255, .4);
+}
+
+small {
+  color: black;
+  font-size: 14px;
+  line-height: 160px;
+}
+
+@media (min-width: 600px) {
+
+  /* header */
+
+  /* hero */
+
+  /* nav */
+
+  .list-sp {
+    display: none;
+  }
+
+  nav.list-pc {
+    display: block;
+  }
+
+  /* overlay */
+  .overlay {
+    display: none;
+  }
+
+  /* content */
+
+  /* location */
+  .location {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .location div {
+    width: calc((100% - 32px) / 2);
+  }
+
+  
+}
